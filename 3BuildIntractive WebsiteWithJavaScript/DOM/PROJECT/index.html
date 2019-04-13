@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chore Door!</title>
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <!-- HEADER WITH LOGO-->
+    <div class="header">
+    <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/logo.svg">
+    </div>
+    
+     <!-- TITLE WITH STARs-->
+    <div class="title-row">
+  <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+   
+    <p class="instructions-title">Instructions</p>
+    
+  <img src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/star.svg">
+   </div>
+    
+<!-- table is a block element like div so we will make table outside div -->    
+  <table class="instructions-row">
+  
+  <tr>
+    <td class="instructions-number">1</td>
+    <td class="instructions-text">Hiding behind one of these doors is the ChoreBot.</td>
+  </tr>
+    
+  <tr>
+    <td class="instructions-number">2</td>
+    <td class="instructions-text">Your mission is to open all of the doors without running into the ChoreBot.</td>
+  </tr>
+    
+  <tr>
+    <td class="instructions-number">3</td>
+    <td class="instructions-text">If you manage to avoid the ChoreBot until you open the very last door, you win!</td>
+  </tr>
+    
+  <tr>
+    <td class="instructions-number">4</td>
+    <td class="instructions-text">See if you can score a winning streak!</td>
+  </tr>
+</table>
+    
+    <!-- first main div-->
+    <div class="door-row">
+      <!-- first door-->
+      <img id="door1" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" >
+      
+      <!-- Second door-->
+      <img id="door2" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" >
+      
+      <!-- Third door-->
+      <img id="door3" class="door-frame" src="https://s3.amazonaws.com/codecademy-content/projects/chore-door/images/closed_door.svg" >  
+    </div>
+    
+<!--buttom create here -->
+    <div id="start" class="start-row">Good Luck</div>
+    
+    <!--Score Board Created Here -->
+    <table class="score-row">
+      <tr>
+        <th class="score-text">Current streak:</th>
+        <th class="score-text">Best streak:</th>
+      </tr>
+      <tr>
+        <th class="score-box" id="score-number"></th>
+       <th class="score-box" id="high-score-number"></th>
+      </tr>
+    </table>
+
+    
+    
+    
+    <!--make connection between html and js before closing of body tag -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
+<!--  https://s3.amazonaws.com/codecademy-content/projects/chore-door/chore-door-final/index.html   -->
